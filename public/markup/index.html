@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Markup Analytics Dashboard</title>
+        <link rel="stylesheet" href="markup/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Markup Analytics Dashboard</h1>
+                <p>Real-time trading markup statistics for App ID 69811</p>
+            </header>
+
+            <div class="dashboard-grid">
+                <section class="wallet-section">
+                    <div class="wallet"></div>
+                </section>
+
+                <section class="chart-section">
+                    <div class="chart-header">
+                        <h2>30-Day Markup Trend</h2>
+                        <p>Daily markup performance over the last month</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="markupGraph"></canvas>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="markup/markup.js"></script>
+    </body>
+</html>
