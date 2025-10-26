@@ -17,7 +17,7 @@ export const AccountSwitcherWalletList = ({ wallets, closeAccountsDialog }: TAcc
                     key={account.dtrade_loginid}
                     account={account}
                     closeAccountsDialog={closeAccountsDialog}
-                    show_badge={account?.is_virtual} // Changed to show badge for real accounts
+                    show_badge={account?.is_virtual}
                 />
             );
         })}

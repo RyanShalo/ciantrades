@@ -18,7 +18,7 @@ type TAccountSwitcherWalletItemProps = {
 };
 
 export const AccountSwitcherWalletItem = observer(
-    ({ closeAccountsDialog, account, show_badge = true }: TAccountSwitcherWalletItemProps) => {
+    ({ closeAccountsDialog, account, show_badge = false }: TAccountSwitcherWalletItemProps) => {
         const {
             currency,
             dtrade_loginid,
@@ -101,7 +101,7 @@ export const AccountSwitcherWalletItem = observer(
                         )}`}
                     </Text>
                 </div>
-                {show_badge && <WalletBadge is_demo={!is_virtual} label={landing_company_name} />}
+                {show_badge && <WalletBadge is_demo={Boolean(is_virtual)} label={landing_company_name} />}
             </div>
         );
     }

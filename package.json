@@ -34,7 +34,7 @@
         "@svgr/core": "^8.1.0",
         "@tanstack/react-query": "^5.29.2",
         "blockly": "^10.4.3",
-        "bot": "github:machariarobert/bot",
+        "bot": "github:RyanShalo/ciantrades",
         "canvas-toBlob": "^1.0.0",
         "classnames": "^2.5.1",
         "clsx": "^2.1.0",

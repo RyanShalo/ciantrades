@@ -2469,11 +2469,11 @@ const AppHeader = observer(() => {
                                             </span>
                                             <div className="deriv-account-switcher-item__detail">
                                                 <span className="deriv-account-switcher-item__currency">
-                                                    {client.loginid?.startsWith('VR') ? 'CR4599918' : 'VRTC6913737'}
-                                                </span>
-                                                <span className="deriv-account-switcher-item__type">
-                                                    {client.loginid?.startsWith('CR') ? 'Demo' : 'Real'} {client.currency || 'USD'} Account
-                                                </span>
+    {client.loginid}
+</span>
+<span className="deriv-account-switcher-item__type">
+    {client.loginid?.startsWith('VR') || client.loginid?.startsWith('VRTC') ? 'Demo' : 'Real'} {client.currency || 'USD'} Account
+</span>
                                             </div>
                                             <div className="deriv-account-switcher-item__balance">
                                                 {new Intl.NumberFormat('en-US', {
